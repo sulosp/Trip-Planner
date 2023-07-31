@@ -4,6 +4,8 @@
 body{
     font-family: 'Manrope', sans-serif;
     display:block;
+    padding:48px;
+    
    
 }
  h1{
@@ -14,19 +16,20 @@ body{
 @media (max-width:767px) { 
     /* Add mobile-specific CSS styles here */
 
-body{
-    margin:20px;
+
+
+.backButton{
+    width:200px;
+    height: 50px;
     
 }
 
-.backButton{
-    padding:24px;
-    width:auto;
-}
-
-.tripPlanner.container-md{
-    display: flex;
-    flex-direction: column;
+#tripPlanner{
+    border-radius: 18px;
+    background: #D98EEB 0.1%;
+    display:flex;
+    flex-direction:column;
+    padding:20px;
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
@@ -36,14 +39,21 @@ body{
         
 }
 
+
+.content h1, p{
+    text-align: center;
+    
+}
+
+.content{
+
+}
+
+
 .Iconbox img{
     z-index:2;
 }
 
 
-
-
-
 }
-
 

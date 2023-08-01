@@ -1,22 +1,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap');
 
-body{
+body {
     font-family: 'Manrope', sans-serif;
     display:block;
-    padding:48px;
-    background: #FFF;
-    
-   
-}
+    background: #FFF;  
+  }
+
+
+
  h1{
     text-transform:capitalize;
     font-size:22px;
     font-weight:800;
+  }
+
+h2{
+    font-size:20px;
+    font-weight:800;
  }
 
- h4{
+h4{
     font-size:18px;
+    font-weight:500;
  }
 
 p{
@@ -28,6 +34,11 @@ p{
     line-height: 16.5px;
  }
 
+ label{
+    font-size:18px;
+    font-weight:500;
+ }
+
 @media (max-width:767px) { 
     /* Add mobile-specific CSS styles here */
 
@@ -36,10 +47,14 @@ p{
 .backButton{
     width:200px;
     height: 50px;
+    margin:30px;
     
 }
 
-#tripPlanner{
+/*trip planner */
+
+
+section#tripPlanner{
     border-radius: 18px;
     background: radial-gradient(100.00% 100.00% at 50.00% 100.00%, #E3C8EB 0%, #F0DDF5 43.33%, #F7E8FB 91.16%);
     display:flex;
@@ -50,13 +65,12 @@ p{
     align-items: center;
     gap: 5px;
     height:auto;
-    margin-top:47px;
-        
+    margin:30px;    
 }
 
 
 .content{
-padding:20px 80px;
+padding:20px 50px;
 text-align:center;
 } 
 
@@ -71,7 +85,10 @@ img.icon {
     margin-bottom:-20px;
  }
 
- /* location input starts */
+ /* user selections starts */
+section#user-selections{
+    padding:30px;
+ }
 
 button.btn.dropdown-toggle{
     display: flex;
@@ -84,17 +101,12 @@ button.btn.dropdown-toggle{
     width:100%;
     padding:10px;
     border-radius:10px;
+    margin-bottom:20px;
 }
 
 button.btn.dropdown-toggle:focus{
     border: 1px solid #E3C8EB;
     box-shadow: 0px 4px 32px 0px rgba(227, 200, 235, 0.50);
-}
-
-button.btn.dropdown-toggle:hover{
-    img{
-        transform:rotate(180deg) 0.2s ease;
-    }
 }
 
 div.btnContent{
@@ -108,29 +120,165 @@ button img{
     margin-right:20px;
 }
 
-div.locationContent *{
+div.selectionContent *{
     height:auto;
     text-align:left;
     margin-bottom:0px;
 }
 
 
-section{
-    margin-bottom:50px;
+.dropdown-menu button{
+    background: rgba(123, 35, 144, 0.00);
+    border-radius: 4px;
+    border:none;
+    padding:10px;
+    text-align: left;
+    width:100%;
+    opacity:0.8;   
+    
+}
+
+.dropdown-menu button:hover{
+    background: rgba(123, 35, 144, 0.10);
+    opacity:1;    
+}
+
+.dropdown-menu{
+    position: absolute;
+    width: 100%;
+    top: 100%; 
+    left: 0; 
+    padding: 20px;
+    list-style: none; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 32px 0px rgba(227, 200, 235, 0.50);
+    z-index: 1; 
+    backdrop-filter: blur(35px);
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.05);
+  
+  }
+
+  ul.dropdown-menu input{
+    border:none;
+    width:100%;
+    padding:10px;
+    border-radius:4px;
+}
+
+button.btn.dropdown-toggle.show{
+    border: 1px solid #E3C8EB;
+    box-shadow: 0px 4px 32px 0px rgba(227, 200, 235, 0.50);
 }
 
 
+a:active{
+    color:#7B2390;
+}
+
+
+a{
+    color:#7B2390;
+    font-style:none;
+    text-decoration: none;
+}
+
+
+
 /* Location dropdown */
+#location-input{
+    position:relative;
+}
 
 
 
-ul.dropdown-menu input{
+button.location-selection .btnContent img{
+    width:20px;
+    height:auto;
+}
+
+/* Calendar dropdown */
+
+/* section preferences */
+
+section#preferences {
+    background-image: url(Assets/Img/Background_img_01.png);
+    background-position:100% -150%;
+    background-repeat: no-repeat;
+    background-size:auto;
+    padding:0px 30px;
+     }
+
+section#preferences h2{
+    margin-bottom:38px;
+}      
+
+div.range{
+    margin-bottom:38px;
+}
+
+div.range img{
+    margin-right:10px;
+}
+
+div.range label{
+    margin-bottom:20px;
+}
+
+/*section location */
+
+section#location{
+    padding:0px 30px;
+}
+
+section#location p{
+    text-align:left;
+}
+
+.btn-group{
+    width:100%;
+    border-radius: 10px;
+    background: linear-gradient(123deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.20) 100%);
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(35px);
+    margin:10px 0px;
+    height:45px;
+    padding:4px;
+   
+}
+
+.btn-group button{
+    background-color: white;
+    color:#7B2390;
+    border-color:white;
+
+}
+
+
+.btn-group button{
+    border-radius: 7px !important;
+}
+
+
+.btn-group button:hover{
+    background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%);
     border:none;
 }
 
 
+button.submit{
+    width:100%;
+    margin:30px 0px;
+    padding: 19px 89px;
+    font-size: 18px;
+    border-radius: 7px;
+    border:none;
+    background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%);
+}
 
-
+button.submit:hover{
+    background: linear-gradient(195deg, #7B2390 0%, #EB62B4 100%);
+    
+}
 
 }
 

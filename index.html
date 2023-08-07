@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!--Bootsrap css-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
   <title>Trip Planner</title>
   
   
   <!-- Additional CSS (optional) -->
   <link rel="stylesheet" href="style.css">
+ 
   
 </head>
 
@@ -30,7 +32,7 @@
   </header>
 
   <!-- Trip Planner -->
-<section id= "tripPlanner">
+<section id= "tripPlanner" >
 
   <img class="icon" src="Assets/Img/Trip Planner Icon.png" alt="TripPlanner">
   <div class="content">
@@ -47,9 +49,9 @@
 
     <!--Location dropdown-->
   
-  <div id="location-input">
+  <div id="location-input" class="fluid-container">
 
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
       <div class = "btnContent">
         <img src="Assets/Img/location.png">
         <div class="selectionContent" >
@@ -57,12 +59,14 @@
           <p>Southend</p>
         </div>
       </div>
+    <img class="dropdown-icon" src="Assets/Img/ion_chevron-down.svg"> 
     </button>
 
     
-    <ul class="dropdown-menu">
+    
+      <ul class="dropdown-menu">
       <span>Search Place</span>
-      <input type="text" class="location-search" placeholder=>
+      <input type="text" class="location-search" placeholder="">
       <li>
         <button class="location-selection" href="/">
           <div class = "btnContent">
@@ -74,7 +78,7 @@
           </div>
         </button>
       </li>  
-           <li>
+      <li>
         <button class="location-selection" href="/">
           <div class = "btnContent">
             <img src="Assets/Img/location-marker.svg">
@@ -85,14 +89,27 @@
           </div>
         </button>
       </li>  
-    </ul>
+      <li>
+        <button class="location-selection" href="/">
+          <div class = "btnContent">
+            <img src="Assets/Img/location-marker.svg">
+            <div class="selectionContent" >
+              <h4 >Southend</h4>
+              <p>South Australia, Australia</p>
+            </div>
+          </div>
+        </button>
+      </li>  
+      </ul>
 
+   
   </div>
 
   <!--Calendar dropdown-->
-    <div id="calendar-input">
+  
+  <div id="calendar-input">
 
-      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" >
         <div class = "btnContent">
           <img src="Assets/Img/Date.png" >
           <div class="selectionContent" >
@@ -100,14 +117,67 @@
             <p>Mar 14, 2023, 4 days</p>
           </div>
         </div>
-      </button>   
+    <img class="dropdown-icon" src="Assets/Img/ion_chevron-down.svg"> 
+    </button>   
+          
+    <div class="dropdown-menu" id="calendar-dropdown">
 
+      <div class="calendar-selection fluid-container row">
+          <button class="col btn " data-toggle="tab" onclick="showWholeMonth(); ">Whole Month</button>
+          <button class="col btn " data-toggle="tab" onclick="showSpecificDays(); ">Specific Days</button>
+      </div>
+
+      <div class="tab-content">
+
+        <div class="tab-pane fade col show" id="whole-month-tab">
+
+          <div class="tab-topic">
+              <h4>Select month</h4>
+          </div>
+
+          <ul class="rolling-months">
+            <li class="faded">Mar</li>
+            <li class="next">Apr</li>
+            <li clas="active">Mar</li>
+            <li class="next">Feb</li>
+            <li class="faded">Jan</li>
+          </ul>
+       
+          <div class="tab-topic">
+            <h4>Select Number of Days</h4>
+          </div>
+
+          <div class="rolling-days">
+            <span class="faded">1</span>              
+            <span class="next">2</span>             
+            <span clas="active">3</span>
+            <span class="next">4</span>
+            <span class="faded">5</span>
+          </div>
+
+          <button class="btn whole-month-select">Select</button>
+            
+        </div>
+
+          <!--
+          <div class="tab-pane fade col hide" id="specific-days-tab">
+
+            <div class="tab-topic">
+              <h4>Select Starting Days</h4>
+            </div>
+
+          </div>
+          !-->         
+
+      </div>
     </div>
+  </div>
+ 
 
-
-  <!--Travellers dropdown-->
+ 
+<!--Travellers dropdown-->
   <div id="traveller-input">
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"  >
       <div class = "btnContent">
         <img src="Assets/Img/Travellers.png" >
         <div class="selectionContent" >
@@ -115,51 +185,182 @@
          <p>2 adults, 1 child</p>
         </div>
       </div>
+    <img class="dropdown-icon" src="Assets/Img/ion_chevron-down.svg"> 
     </button>    
-  </div>
 
+    <div class="dropdown-menu" id="travellers-dropdown">
+
+      <div class="fluid-container input-range-group">
+    
+        <div class="fluid-container input-range">
+    
+        <div class="input-content col">
+          <h5>Adults</h5>
+          <span>Age 16+</span>
+        </div>
+
+        <form class="col">
+          <div class="value-button" id="decrease" onclick="decreaseValue(); " value="Decrease Value">-</div>
+          <input type="number" id="number" value="0" />
+          <div class="value-button" id="increase" onclick="increaseValue();" value="Increase Value">+</div>
+        </form>
+
+        </div>
+
+        <div class="fluid-container input-range">
+    
+          <div class="input-content col">
+            <h5>Children</h5>
+            <span>Age 0 to 15</span>     
+          </div>
+  
+          <form class="col">
+            <div class="value-button" id="decrease" onclick="decreaseValue(); " value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue();" value="Increase Value">+</div>
+          </form>
+  
+          </div>
+      
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" >
+
+            <div class = "btnContent">
+            
+              <div class="selectionContent" >
+                <h5 >Age of Child 1</h5>
+              </div>
+
+            </div>
+
+        <img class="dropdown-icon" src="Assets/Img/ion_chevron-down.svg"> 
+        </button>   
+        
+
+      </div>
+    
+    </div>
+
+  </div>
 
 </section>
 
 
 <!--Preferences-->
 
-<section id="preferences">
+<section id="preferences" >
 
   <h2>Preferences</h2>
 
   <div class="range">
     <img src="Assets/Img/food.png" >
     <label for="food" class="form-label">Food</label> 
-    <input type="range" class="form-range" min="0" max="3" step="0.2" id="food" >
+    <input type="range" class="form-range" min="0" max="3" step="0.1" id="food" >
+    <div class="dividers-group">
+      <span class="divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="divider">|</span>
+    </div>
+    <div class="markers">
+      <span>Less</span>
+      <span>Typical</span>
+      <span>More</span>
+    </div>
   </div>
 
   <div class="range">
     <img src="Assets/Img/Art.png" >
     <label for="art" class="form-label">Art</label> 
-    <input type="range" class="form-range" min="0" max="3" step="0.2" id="art">
+    <input type="range" class="form-range" min="0" max="3" step="0.1" id="art">
+    <div class="dividers-group">
+      <span class="divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="divider">|</span>
+    </div>
+    <div class="markers">
+      <span>Less</span>
+      <span>Typical</span>
+      <span>More</span>
+    </div>
+  </div>
+
+  <div class="range">
+    <img src="Assets/Img/Shopping.png" >
+    <label for="art" class="form-label">Shopping</label> 
+    <input type="range" class="form-range" min="0" max="3" step="0.1" id="other-activities">
+    <div class="dividers-group">
+      <span class="divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="divider">|</span>
+    </div>
+    <div class="markers">
+      <span>Less</span>
+      <span>Typical</span>
+      <span>More</span>
+    </div>
   </div>
 
   <div class="range">
     <img src="Assets/Img/Activities.png" >
     <label for="art" class="form-label">Other Activities</label> 
-    <input type="range" class="form-range" min="0" max="3" step="0.2" id="other-activities">
+    <input type="range" class="form-range" min="0" max="3" step="0.1" id="other-activities">
+    <div class="dividers-group">
+      <span class="divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="sub-divider">|</span>
+      <span class="divider">|</span>
+    </div>
+    <div class="markers">
+      <span>Less</span>
+      <span>Typical</span>
+      <span>More</span>
+    </div>
   </div>
 
 </section>           
 
 
 <!--Location-->
-<section id="location">
+<section id="location" >
   
   <h2>Location</h2>
 
   <p> Choose whether you’ll prefer a spot mostly visitied by tourists or some unique spot </p>
 
   <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-primary">Left</button>
-    <button type="button" class="btn btn-primary">Middle</button>
-    <button type="button" class="btn btn-primary">Right</button>
+    <button type="button" class="btn btn-primary">Popular</button>
+    <button type="button" class="btn btn-primary">Moderate</button>
+    <button type="button" class="btn btn-primary">Suprising</button>
   </div>
 
   <button class="btn btn-primary submit" type="submit">Confirm</button>
@@ -169,7 +370,7 @@
 
 
 
-<!--Bootstrap js-->
+<!--Bootstrap js -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   

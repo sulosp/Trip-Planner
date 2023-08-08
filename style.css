@@ -245,6 +245,12 @@ button.location-selection .btnContent img{
     height:auto;
 }
 
+button.location-selection h4{
+    color: #121212;
+    
+}
+
+
 /* Calendar dropdown */
 
 #calendar-input{

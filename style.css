@@ -136,57 +136,55 @@ button.btn.dropdown-toggle img.dropdown-icon{
     display:none;
 }
 
-button.btn.dropdown-toggle:focus{
+button.btn.dropdown-toggle:focus {
     border: 1px solid #E3C8EB;
     box-shadow: 0px 4px 32px 0px rgba(227, 200, 235, 0.50);
 }
 
 
-div.btnContent{
+div.btnContent {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    
+    align-items: center;    
 }
 
-button img{
+
+button img {
     margin-right:20px;
 }
+
+
 
 div.selectionContent *{
     height:auto;
     text-align:left;
-    margin-bottom:0px;
-    
-    
-    
+    margin-bottom:0px;    
 }
 
 
-.dropdown-menu button{
+
+.dropdown-menu button {
     background: rgba(123, 35, 144, 0.00);
     border-radius: 4px;
     border:none;
     text-align: left;
     width:100%;
     opacity:0.8;   
-    padding:14px;
-    
-    
+    padding:14px;    
 }
 
 
-.dropdown-menu button:hover{
+
+.dropdown-menu button:hover {
     background: rgba(123, 35, 144, 0.10);
-    opacity:1;    
-
+    opacity:1;   
 }
 
 
-.dropdown-menu{
+.dropdown-menu {
     position: absolute;
     width: 100%;
-    bottom: 20px !important;
+    top:20px !important;
     left: 0;
     list-style: none;
     box-shadow: 0px 4px 32px 0px rgba(227, 200, 235, 0.50);
@@ -200,7 +198,6 @@ div.selectionContent *{
     border: 1px solid #fff;
     overflow-y: auto;
     height: 500px;
-
 }
 
 
@@ -259,8 +256,7 @@ button.location-selection h4{
 
 #calendar-dropdown{
     transition:all 0.5s ease;
-    padding:20px;
-   
+    padding:20px;   
 
 }
 

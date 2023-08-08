@@ -670,7 +670,7 @@ section#location p{
 }
 
 
-button.submit{
+a.submit{
     width:100%;
     margin:30px 0px;
     padding: 19px 89px;
@@ -681,7 +681,7 @@ button.submit{
     margin:40px 0px 50px 0px;
 }
 
-button.submit:hover{
+a.submit:hover{
     background: linear-gradient(195deg, #7B2390 0%, #EB62B4 100%);
     
 }
@@ -757,7 +757,7 @@ section.onboarding{
     text-transform: capitalize;
 }
 
-.onboarding-heading button{
+.onboarding-heading a{
     margin-bottom:0px !important;
     color: #FFF;
     border-radius: 7px;
@@ -765,7 +765,7 @@ section.onboarding{
     
 }
 
-.onboarding-heading button:hover{
+.onboarding-heading a:hover{
     color: #FFF;
     transition:all 0.5s ease;
       

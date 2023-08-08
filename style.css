@@ -768,6 +768,13 @@ section.onboarding{
     color: #FFF;
     border-radius: 7px;
     background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%);
+    padding: 19px 89px !important;
+    -webkit-padding: 19px 89px !important; /* Safari */
+    -moz-padding: 19px 89px; /* Firefox */
+    -ms-padding: 19px 89px; /* Edge/IE */
+    width:100%;
+    margin-top:30px;
+    -webkit-margin-top:30px;
     
 }
 

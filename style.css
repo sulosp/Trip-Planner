@@ -184,7 +184,7 @@ div.selectionContent *{
 .dropdown-menu{
     position: absolute;
     width: 100%;
-    top:10px !important;
+    bottom:20px !important;
     left: 0; 
     list-style: none; 
     box-shadow: 0px 4px 32px 0px rgba(227, 200, 235, 0.50);
@@ -197,6 +197,7 @@ div.selectionContent *{
     transition:all 0.5s ease;
     border: 1px solid #E3C8EB;
     overflow-y:auto;
+    height:500px;
 
 }
 

@@ -686,11 +686,111 @@ button.submit:hover{
     
 }
 
+/*onboarding starts*/
+
+section.onboarding{
+    background: url(Assets/Img/hero\ backdrop.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;  
+    padding:20px;
+}
+
+.logo img{
+    width:36px;
+}
+
+.logo h4{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.5px;
+    text-transform: capitalize;
+}
 
 
+.onboarding-heading{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
+
+.onboarding-heading h1{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom:0px !important;
+    margin-top:-10px;
+}
 
 
+.onboarding-heading p{
+    margin-bottom:0px !important;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
 
+.onboarding-heading button{
+    margin-bottom:0px !important;
+    color: #FFF;
+    border-radius: 7px;
+    background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%);
+    
+}
+
+.onboarding-heading button:hover{
+    color: #FFF;
+    transition:all 0.5s ease;
+      
+}
+
+.onboarding-details{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0px;
+    margin-top:-10px;
+}
+
+.onboarding-details p{
+    margin-bottom: 0px !important;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
 
 
 

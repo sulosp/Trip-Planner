@@ -189,7 +189,7 @@ div.selectionContent *{
     list-style: none;
     box-shadow: 0px 4px 32px 0px rgba(227, 200, 235, 0.50);
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 1);
     backdrop-filter: blur(10px);
     max-height: 300px;
     padding: 20px;

@@ -158,6 +158,8 @@ div.selectionContent *{
     text-align:left;
     margin-bottom:0px;
     
+    
+    
 }
 
 
@@ -184,20 +186,20 @@ div.selectionContent *{
 .dropdown-menu{
     position: absolute;
     width: 100%;
-    bottom:20px !important;
-    left: 0; 
-    list-style: none; 
+    bottom: 20px !important;
+    left: 0;
+    list-style: none;
     box-shadow: 0px 4px 32px 0px rgba(227, 200, 235, 0.50);
-    z-index: 1; 
-    backdrop-filter: blur(35px);
-    background: linear-gradient(123deg, rgba(255, 255, 255, 0.2) 10%, rgba(255, 255, 255, 0.2) 50%);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px); /* Adjust blur value */
     max-height: 300px;
-    padding:20px;
-    border-radius:10px;     
-    transition:all 0.5s ease;
-    border: 1px solid #E3C8EB;
-    overflow-y:auto;
-    height:500px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    border: 1px solid #fff;
+    overflow-y: auto;
+    height: 500px;
 
 }
 
@@ -250,10 +252,9 @@ button.location-selection .btnContent img{
 }
 
 #calendar-dropdown{
-    margin-top:60px;
     transition:all 0.5s ease;
     padding:20px;
-    
+   
 
 }
 
@@ -264,7 +265,7 @@ button.location-selection .btnContent img{
 
 .calendar-selection{
     border-radius: 10px;
-    background: linear-gradient(123deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.20) 100%);
+    background: linear-gradient(123deg, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.9) 100%);
     backdrop-filter: blur(35px);
     padding:4px;
     margin-bottom:20px;
@@ -276,7 +277,6 @@ button.location-selection .btnContent img{
 .calendar-selection button{
     text-align:center;
     color: rgba(123, 35, 144, 1);
-    background-color:#FFF;
     border-radius:7px;
     height:auto;
     width:auto;
@@ -429,6 +429,11 @@ button.btn.whole-month-select{
 
 }
 
+
+#travellers-dropdown.dropdown-menu{
+    height:240px;
+}
+
 form {
     width: 300px;
     margin: 0 auto;
@@ -497,7 +502,18 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
+
   }
+
+form.col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center; 
+  }
+
 
 
 .input-range-group{

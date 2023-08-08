@@ -750,6 +750,7 @@ section.onboarding{
     text-transform: capitalize;
     margin-bottom:0px !important;
     margin-top:-10px;
+    -webkit-margin-top:-10px;
 }
 
 
@@ -775,6 +776,13 @@ section.onboarding{
     width:100%;
     margin-top:30px;
     -webkit-margin-top:30px;
+    border-width:0px;
+    text-align: center;    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
     
 }
 

@@ -831,7 +831,7 @@ section.onboarding{
 
 
 .hero-heading{
-    padding:35px 0px 0px 20px;
+    padding:35px 0px 0px 20px;    
 
 }
 
@@ -846,6 +846,7 @@ section.onboarding{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom:-5px;
+    z-index:2;
 }
 
 .hero-heading p{
@@ -872,14 +873,88 @@ section.onboarding{
     background-size: auto;
     overflow:visible;
     height:153px;
+    
+    
 }
 
 
 
+/*Events section starts*/
+
+#Events{
+    margin:50px 0px 30px 0px;
+    position:relative;
+}
 
 
+.Events-Heading{
+    margin:30px 30px 15px 30px;
+}
 
 
+.Events-Heading img.col-1{
+    padding:0px !important;
+    width:24px;
+    height:24px;
+}
+
+.Event-card{
+    padding:20px;
+    background: linear-gradient(123deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%);
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+    backdrop-filter: blur(15px);
+    border-radius:10px;
+    margin:10px 30px 10px 30px;
+}
+
+
+.Event-card p,h5{
+    margin-bottom:0px !important;
+}
+
+.Event-card p{
+    color: #121212;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+
+.Event-card.row>*{
+    padding-left:0px !important;
+    Padding-right:0px!important;
+}
+
+.Events-Background-1{
+    position: absolute;
+    top:0;
+    right:0;
+    width:120px;
+    height:auto;
+
+}
+.Events-Background-2{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:120px;
+    height:auto;
+
+}
+
+a.Event-card{
+    color:#121212; 
+   
+}
+
+a.Event-card:hover{
+    color: #7B2390 !important;        
+    filter: drop-shadow(0px 5px 20px rgba(198, 118, 218, 0.30));
+    transition: all 0.5s ease;    
+    
+}
 
 
 

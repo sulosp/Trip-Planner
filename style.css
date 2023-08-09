@@ -52,7 +52,7 @@ p,span{
 
 .backButton{
     width:200px;
-    height: 50px;
+    height: 30px;
     margin:30px;
     
 }
@@ -814,6 +814,11 @@ section.onboarding{
 }
 
 
+/*dashboard starts */
+
+.dashboard-menu{
+    padding:30px;
+}
 
 
 

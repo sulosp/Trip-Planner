@@ -49,11 +49,16 @@ p,span{
     /* Add mobile-specific CSS styles here */
 
 
+header{
+    padding:30px;
+    margin:0px !important;
+}
+
+
 
 .backButton{
     width:200px;
     height: 30px;
-    margin:30px;
     
 }
 
@@ -816,10 +821,6 @@ section.onboarding{
 
 /*dashboard starts */
 
-.dashboard-menu{
-    padding:30px;
-    margin:0px !important;
-}
 
 #hero{
     background: url(Assets/Img/dashboard-hero-background.svg);
@@ -955,6 +956,122 @@ a.Event-card:hover{
     filter: drop-shadow(0px 5px 20px rgba(198, 118, 218, 0.30));
     transition: all 0.5s ease;    
     
+}
+
+/*daily plan starts*/
+
+#daily-plan-hero{
+    padding:0px 50px 30px 50px;
+}
+
+.daily-plan-title{
+    color: #121212;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/*weather slider starts*/
+
+#weather-slider{
+    position:relative;
+}
+
+#slider-item{
+    border-radius: 18px;
+    background: radial-gradient(120.11% 151.20% at 65.99% 150.00%, #EFA1FF 0%, #FAE9FF 63.54%, #FAE9FF 100%);
+    padding:20px;    
+}
+
+.weather-slider-heading h2,span{
+    margin-bottom:0px;
+}
+
+.slider-img{
+    margin-top:-50px;
+}
+
+#slider-inner{
+    padding-top:30px;
+}
+
+.slider-control-prev{
+    margin-right:0px !important;
+     
+}
+
+
+
+.slider-control-next{   
+    margin-right:0px !important;
+    transform:rotate(-180deg);
+}
+
+
+button.carousel-control-prev{
+   border-radius: 10px;
+    background: linear-gradient(123deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.20) 100%);
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(35px);
+    height:40px;
+    width:40px;   
+    opacity:100% !important;
+    padding:8px !important;
+    position: absolute;
+    top: 55%; 
+    transform: translateY(-50%); 
+    left:-5%;
+
+}   
+
+button.carousel-control-next{
+    border-radius: 10px;
+    background: linear-gradient(123deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.20) 100%);
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(35px);
+    height:40px;
+    width:40px;
+    opacity:100% !important;
+    padding:8px !important;
+    position: absolute;
+    top: 55%; 
+    transform: translateY(-50%); 
+    right:-5%;
+}
+
+
+.weather-details{
+    padding:5px;
+}
+
+
+/*plan details starts*/
+
+#planDetails{
+    padding:0px 30px 50px 30px;
+
+}
+
+#planDetails .btn-group{
+    padding:4px !important;
+    height:55px;
+    border-radius:10px;
+}
+
+
+#planDetails .plan-overview{
+    border-radius: 7px !important;
+    background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%) !important;
+    border-width: 0px;
+    color:#FFF;
+}
+
+
+#planDetails button:hover{
+    background-color: #FFF !important;
 }
 
 

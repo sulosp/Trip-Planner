@@ -1052,6 +1052,10 @@ button.carousel-control-next{
 
 #planDetails{
     padding:0px 30px 50px 30px;
+    background: url(Assets/Img/plan\ overview\ background.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
 
 }
 
@@ -1070,9 +1074,95 @@ button.carousel-control-next{
 }
 
 
-#planDetails button:hover{
-    background-color: #FFF !important;
+#planDetails button.btn:hover{
+    background: #FFFFFF00 !important;
+    color:#7B2390;
+    border-width: 0px !important;
+
 }
+
+
+#planDetails button.plan-overview:hover{
+    background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%) !important;
+    color:#fff;
+    border-width: 0px !important;
+}
+
+
+#morning{
+    margin-top:40px;    
+    border-left: dashed 1px #EB62B4;        
+}
+
+
+#morning h5{
+    color: #1AA040;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+#planCard{
+    margin:10px 0px 10px 20px;    
+    height:72px;
+}
+
+
+#planCard p{
+    margin-bottom: 0px;
+    color: #121212;
+    font-weight: 500;
+}
+
+
+#planCard span{
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+
+.more-details-menu{
+    padding: 7px;    
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    backdrop-filter: blur(35px);
+    border-radius:10px;   
+}
+
+
+.card-details{
+    padding:15px;
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    backdrop-filter: blur(35px);
+    border-radius:10px;
+    height:72px;
+}
+
+/*afternoon starts*/
+
+#afternoon{
+    margin-top:20px;
+}
+
+#afternoon h5{
+    color: #26399D;
+
+}
+
+
+/*Evening starts*/
+
+
+#Evening{
+    margin-top:20px;
+}
+
+#Evening h5{
+    color: #76961D;
+}
+
+
 
 
 

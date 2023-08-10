@@ -1066,26 +1066,34 @@ button.carousel-control-next{
 }
 
 
-#planDetails .plan-overview{
+a.plan-overview{
     border-radius: 7px !important;
     background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%) !important;
-    border-width: 0px;
-    color:#FFF;
-}
-
-
-#planDetails button.btn:hover{
-    background: #FFFFFF00 !important;
-    color:#7B2390;
     border-width: 0px !important;
+    color:#FFF;
+    margin:0px !important;
+    padding:10px;
+}
 
+a.plan-details{
+    margin:0px !important;
+    border-width:0px !important;
+    padding:10px;
 }
 
 
-#planDetails button.plan-overview:hover{
+a.plan-details:hover{
+    background: #fff !important;
+    color:rgba(123, 35, 144, 1);
+    border-width:0px !important;
+    margin:0px !important;
+}
+
+a.plan-overview:hover{
     background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%) !important;
     color:#fff;
     border-width: 0px !important;
+    margin:0px !important;
 }
 
 
@@ -1124,19 +1132,24 @@ button.carousel-control-next{
 .more-details-menu{
     padding: 7px;    
     background-color: #fff;
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-    backdrop-filter: blur(35px);
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.08));
+    backdrop-filter: blur(10px);
     border-radius:10px;   
+    -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.08)); 
+    -webkit-backdrop-filter: blur(10px); 
+
 }
 
 
 .card-details{
     padding:15px;
     background-color: #fff;
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.08));
     backdrop-filter: blur(35px);
     border-radius:10px;
     height:72px;
+    -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.08)); 
+    -webkit-backdrop-filter: blur(10px); 
 }
 
 /*afternoon starts*/

@@ -1145,7 +1145,7 @@ a.plan-overview:hover{
     padding:15px;
     background-color: #fff;
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.08));
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(10px);
     border-radius:10px;
     height:72px;
     -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.08)); 

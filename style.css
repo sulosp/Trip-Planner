@@ -705,11 +705,11 @@ section.onboarding{
     background-size: cover;
     background-repeat: no-repeat;
     height:100vh;
-    padding:80px 30px;
+    -webkit-padding:80px 30px;
+    padding:30px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: space-between;  
 }
 
 .logo{

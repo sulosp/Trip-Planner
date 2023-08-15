@@ -705,7 +705,7 @@ section.onboarding{
     background-size: cover;
     background-repeat: no-repeat;
     height:100vh;
-    padding:30px;
+    padding:50px 30px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -742,6 +742,7 @@ section.onboarding{
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
+    
 
 }
 

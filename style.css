@@ -710,7 +710,7 @@ section.onboarding{
     flex-direction: column;
     justify-content: space-between;
 
-    -webkit-padding:30px 30px 90px 30px;
+    -webkit-padding:30px 30px 90px 30px !important;
 }
 
 .logo{

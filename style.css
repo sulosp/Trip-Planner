@@ -978,22 +978,26 @@ a.Event-card:hover{
 
 /*weather slider starts*/
 
-#weather-slider{
+#weatherSlider{
     position:relative;
 }
 
-#slider-item{
+.carousel-item {
     border-radius: 18px;
     background: radial-gradient(120.11% 151.20% at 65.99% 150.00%, #EFA1FF 0%, #FAE9FF 63.54%, #FAE9FF 100%);
     padding:20px;    
-}
+   }
 
-.weather-slider-heading h2,span{
+
+.weatherSlider-heading h2,span{
     margin-bottom:0px;
 }
 
 .slider-img{
-    margin-top:-50px;
+   margin:-50px 0px 20px 0px;
+   width:100%;
+   display:flex;
+   justify-content: center;  
 }
 
 #slider-inner{
@@ -1052,7 +1056,7 @@ button.carousel-control-next{
 
 /*plan details starts*/
 
-#planDetails{
+#planOverview{
     padding:0px 30px 50px 30px;
     background: url(Assets/Img/plan\ overview\ background.svg);
     background-repeat: no-repeat;
@@ -1061,7 +1065,7 @@ button.carousel-control-next{
 
 }
 
-#planDetails .btn-group{
+#planOverview .btn-group{
     padding:4px !important;
     height:55px;
     border-radius:10px;

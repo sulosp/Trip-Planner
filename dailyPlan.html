@@ -36,22 +36,26 @@
 
 <section id="daily-plan-hero">
 
-  <div id="weather-slider" class="carousel slide">
+  <div id="weatherSlider" class="carousel slide">
 
     <div id="slider-inner" class="carousel-inner">
 
-      <div id ="slider-item" class="carousel-item active d-flex flex-column align-items-center gap-3">
+      <div class="carousel-item active">
 
-          <img class="slider-img" src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
-            
-          <div class="d-flex flex-column weather-slider-heading gap-1">
+          <div class="slider-img">
+            <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
+          </div>    
+
+          <div class="d-flex flex-column weatherSlider-heading gap-1 align-items-center">
               <h2>Wednesday</h2>
               <span>7 Jul 2023</span>
           </div>
-
+          
+          <div class="d-flex flex-column align-items-center m-2">
           <img src="Assets/Img/slider-radio.svg" alt="slider" width="203px" height="auto">
+          </div>
 
-          <div class="d-flex flex-row weather-details gap-4">
+          <div class="d-flex flex-row weather-details gap-4 justify-content-center">
 
             <img src="Assets/Img/cloud-icon.png" alt="rainy day" width="38px" height="auto">
             
@@ -63,23 +67,73 @@
           </div>
 
       </div>
+        
 
-      <div id ="slider-item" >   
+      <div class="carousel-item">   
+        <div class="slider-img">
+          <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
+        </div>    
+        <div class="d-flex flex-column weatherSlider-heading gap-1 align-items-center">
+            <h2>Wednesday</h2>
+            <span>7 Jul 2023</span>
+        </div>
+
+        <div class="d-flex flex-column align-items-center m-2">
+          <img src="Assets/Img/slider-radio.svg" alt="slider" width="203px" height="auto">
+        </div>
+
+        <div class="d-flex flex-row weather-details gap-4 justify-content-center">
+
+          <img src="Assets/Img/cloud-icon.png" alt="rainy day" width="38px" height="auto">
+          
+          <div class="d-flex flex-column align-items-center gap-1">
+            <span><b>5°C</b></span>
+            <span><b>Rainy</b></span>
+          </div>
+
+        </div>
+
       </div>
 
-      <div id ="slider-item" >      
+      <div class="carousel-item" >      
+
+        <div class="slider-img">
+          <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
+        </div>   
+            
+        <div class="d-flex flex-column weatherSlider-heading gap-1 align-items-center">
+            <h2>Wednesday</h2>
+            <span>7 Jul 2023</span>
+        </div>
+
+         <div class="d-flex flex-column align-items-center m-2">
+          <img src="Assets/Img/slider-radio.svg" alt="slider" width="203px" height="auto">
+        </div>
+
+        <div class="d-flex flex-row weather-details gap-4 justify-content-center">
+
+          <img src="Assets/Img/cloud-icon.png" alt="rainy day" width="38px" height="auto">
+          
+          <div class="d-flex flex-column align-items-center gap-1">
+            <span><b>5°C</b></span>
+            <span><b>Rainy</b></span>
+          </div>
+
+        </div>
+
+
       </div>
 
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#weatherSlider" data-bs-slide="prev">
           
         <img class="slider-control-prev" src="Assets/Img/slider-back-icon.svg">
         <span class="visually-hidden">Previous</span>
 
     </button>
 
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#weatherSlider" data-bs-slide="next">
           
         <img class="slider-control-next" src="Assets/Img/slider-back-icon.svg">
         <span class="visually-hidden">Next</span>
@@ -91,7 +145,7 @@
 
 </section>
 
-<section id="planDetails" >
+<section id="planOverview" >
 
 <div class="btn-group d-flex flex-row align-items-center ">
   <a class="btn plan-overview h-100 col " >Plan Overview</a>
@@ -377,8 +431,6 @@
 
 
 </section>
-
-
 
 
 

@@ -34,13 +34,13 @@
     
 </header>
 
-<section id="daily-plan-hero">
+<section class="daily-plan-hero">
 
-  <div id="weatherSlider" class="carousel slide">
+  <div id="weatherSlider1" class="carousel slide">
 
-    <div id="slider-inner" class="carousel-inner">
+    <div class="carousel-inner slider-inner">
 
-      <div class="carousel-item active">
+      <div class="carousel-item active slider-item">
 
           <div class="slider-img">
             <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
@@ -69,7 +69,7 @@
       </div>
         
 
-      <div class="carousel-item">   
+      <div class="carousel-item slider-item">   
         <div class="slider-img">
           <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
         </div>    
@@ -95,7 +95,7 @@
 
       </div>
 
-      <div class="carousel-item" >      
+      <div class="carousel-item slider-item" >      
 
         <div class="slider-img">
           <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
@@ -126,14 +126,14 @@
 
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#weatherSlider" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#weatherSlider1" data-bs-slide="prev">
           
         <img class="slider-control-prev" src="Assets/Img/slider-back-icon.svg">
         <span class="visually-hidden">Previous</span>
 
     </button>
 
-    <button class="carousel-control-next" type="button" data-bs-target="#weatherSlider" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#weatherSlider1" data-bs-slide="next">
           
         <img class="slider-control-next" src="Assets/Img/slider-back-icon.svg">
         <span class="visually-hidden">Next</span>
@@ -148,10 +148,11 @@
 <section id="planOverview" >
 
 <div class="btn-group d-flex flex-row align-items-center ">
-  <a class="btn plan-overview h-100 col " >Plan Overview</a>
-  <a class="btn plan-details h-100 col" >Plan Details</a>
+  <a class="btn plan-overview h-100 col active "  href="dailyPlan.html">Plan Overview</a>
+  <a class="btn plan-details h-100 col " href="dailyPlan Details.html" >Plan Details</a>
 </div>
 
+<div style="border-left: dashed 1px #EB62B4;">
 <div id="morning">
 
   <div class="d-flex flex-row gap-2 align-items-center" style="padding:5px 20px 20px 20px;">
@@ -168,7 +169,7 @@
     <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
   </svg>
 
-  <a href="" id="planCard" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100">
+  <a href="" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100 planCard">
 
     <div class="d-flex flex-row align-items-center justify-content-between w-100 card-details">
 
@@ -209,7 +210,7 @@
     <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
   </svg>
 
-  <a href="" id="planCard" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100">
+  <a href="" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100 planCard">
 
     <div class="d-flex flex-row align-items-center justify-content-between w-100 card-details">
 
@@ -244,6 +245,8 @@
 
 </div>
 
+</div>
+
 <div id="afternoon">
 
   <div class="d-flex flex-row gap-2 align-items-center" style="padding:5px 20px 20px 20px;">
@@ -259,7 +262,7 @@
       <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
     </svg>
   
-    <a href="" id="planCard" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100">
+    <a href="" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100 planCard">
 
       <div class="d-flex flex-row align-items-center justify-content-between w-100 card-details">
   
@@ -300,7 +303,7 @@
       <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
     </svg>
   
-    <a href="" id="planCard" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100">
+    <a href="" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100 planCard">
 
       <div class="d-flex flex-row align-items-center justify-content-between w-100 card-details">
   
@@ -335,6 +338,8 @@
   
   </div>
 
+</div>
+
 <div id="Evening">
 
   <div class="d-flex flex-row gap-2 align-items-center" style="padding:5px 20px 20px 20px;">
@@ -351,7 +356,7 @@
     <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
   </svg>
 
-  <a href="" id="planCard" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100">
+  <a href="" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100 planCard">
 
     <div class="d-flex flex-row align-items-center justify-content-between w-100 card-details">
 
@@ -392,7 +397,7 @@
     <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
   </svg>
 
-  <a href="" id="planCard" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100">
+  <a href="" class="d-flex flex-row align-items-center justify-content-between gap-2 w-100 planCard">
 
     <div class="d-flex flex-row align-items-center justify-content-between w-100 card-details">
 
@@ -429,7 +434,7 @@
 
 </div>
 
-
+</div>
 </section>
 
 

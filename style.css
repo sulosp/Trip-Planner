@@ -37,7 +37,7 @@ p,span{
     font-family: Manrope;
     font-size: 14px;
     font-weight: 400;
-    line-height: 16.5px;
+    line-height: 18px;
  }
 
  label{
@@ -962,7 +962,7 @@ a.Event-card:hover{
 
 /*daily plan starts*/
 
-#daily-plan-hero{
+.daily-plan-hero{
     padding:0px 50px 30px 50px;
 }
 
@@ -978,11 +978,15 @@ a.Event-card:hover{
 
 /*weather slider starts*/
 
-#weatherSlider{
+#weatherSlider1{
     position:relative;
 }
 
-.carousel-item {
+#weatherSlider2{
+    position:relative;
+}
+
+.slider-item {
     border-radius: 18px;
     background: radial-gradient(120.11% 151.20% at 65.99% 150.00%, #EFA1FF 0%, #FAE9FF 63.54%, #FAE9FF 100%);
     padding:20px;    
@@ -1000,7 +1004,7 @@ a.Event-card:hover{
    justify-content: center;  
 }
 
-#slider-inner{
+.slider-inner{
     padding-top:30px;
 }
 
@@ -1072,32 +1076,37 @@ button.carousel-control-next{
 }
 
 
-a.plan-overview{
+a.active{
     border-radius: 7px !important;
     background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%) !important;
-    border-width: 0px !important;
-    color:#FFF;
+    color:#FFF !important;
+    
+}
+
+
+a.plan-overview{
     margin:0px !important;
     padding:10px;
+    border-radius: 7px !important;
+    border-width: 0px !important;
 }
 
 a.plan-details{
     margin:0px !important;
     border-width:0px !important;
-    padding:10px;
+    padding:10px;    
 }
 
 
 a.plan-details:hover{
-    background: #fff !important;
-    color:rgba(123, 35, 144, 1);
-    border-width:0px !important;
+    color:#7B2390;
+    border-width: 0px !important;
     margin:0px !important;
 }
 
+
 a.plan-overview:hover{
-    background: linear-gradient(165deg, #7B2390 0%, #EB62B4 100%) !important;
-    color:#fff;
+    color:#7B2390;
     border-width: 0px !important;
     margin:0px !important;
 }
@@ -1105,7 +1114,7 @@ a.plan-overview:hover{
 
 #morning{
     margin-top:40px;    
-    border-left: dashed 1px #EB62B4;        
+          
 }
 
 
@@ -1116,20 +1125,21 @@ a.plan-overview:hover{
 }
 
 
-#planCard{
+.planCard{
     margin:10px 0px 10px 20px;    
     height:72px;
 }
 
 
-#planCard p{
+.planCard p{
     margin-bottom: 0px;
     color: #121212;
     font-weight: 500;
+    text-align: left;
 }
 
 
-#planCard span{
+.planCard span{
     font-weight: 300;
     opacity: 0.6;
 }
@@ -1161,8 +1171,11 @@ a.plan-overview:hover{
 /*afternoon starts*/
 
 #afternoon{
-    margin-top:20px;
+    margin-top:40px;    
+     
 }
+
+
 
 #afternoon h5{
     color: #26399D;
@@ -1182,7 +1195,82 @@ a.plan-overview:hover{
 }
 
 
+/*dailyPlan-Details starts*/
 
+.carousel-img{
+    border-radius:10px;
+}
+
+
+
+
+
+
+.carousel-indicators button{
+    width:3px !important;
+    border-radius:5px !important;   
+    background-color: #EB62B4 !important;
+    
+}
+
+
+
+p.location-in-detail{
+    margin:15px 0px;
+    color: #121212;
+    font-size: 12.5px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+
+.planCard button.carousel-control-prev{
+    width:24px;
+    height:24px;
+    border-radius:5px;
+    background: rgba(18, 18, 18, 0.40);
+    margin-left:25px;
+    margin-top:-25px;
+    padding:4px !important;
+   
+}
+
+.planCard button.carousel-control-next{
+    width:24px;
+    height:24px;
+    border-radius:5px;
+    background: rgba(18, 18, 18, 0.40);
+    margin-right:25px;
+    margin-top:-25px;
+    padding:4px !important;
+}
+
+.view-details{
+    font-size:14px !important;
+    padding:15px 39px;
+    border-radius: 12px;
+    border: 1px solid rgba(123, 35, 144, 0.10);
+    color: #7B2390;    
+
+}
+
+.view-details:hover{
+    font-size:14px !important;
+    padding:15px 39px;
+    border-radius: 12px;
+    border: 1px solid rgba(123, 35, 144, 0.10);
+    color: #Fff;
+    background-color: #7B2390;
+    
+}
+
+.planCard h4{
+
+    color: #121212;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
 }

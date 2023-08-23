@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--Bootsrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+  <title>Trip Planner</title>
+  
+  
+  <!-- Additional CSS (optional) -->
+  <link rel="stylesheet" href="style.css">
+ 
+  
+</head>
+
+<body>
+
+<header class="row">
+
+    <a class="col" href="dashboard.html"> 
+        <img src="Assets/Img/backButton.png" alt="back"> 
+    </a>
+
+    <div class="col">
+        <h2 class="daily-plan-title">Jerusalem</h2>
+    </div>
+
+    <div class="col"></div>
+    
+</header>
+
+<section class="daily-plan-hero">
+
+    <div id="weatherSlider2" class="carousel slide">
+  
+      <div class="carousel-inner slider-inner">
+  
+        <div class="carousel-item active slider-item">
+  
+            <div class="slider-img">
+              <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
+            </div>    
+  
+            <div class="d-flex flex-column weatherSlider-heading gap-1 align-items-center">
+                <h2>Wednesday</h2>
+                <span>7 Jul 2023</span>
+            </div>
+            
+            <div class="d-flex flex-column align-items-center m-2">
+            <img src="Assets/Img/slider-radio.svg" alt="slider" width="203px" height="auto">
+            </div>
+  
+            <div class="d-flex flex-row weather-details gap-4 justify-content-center">
+  
+              <img src="Assets/Img/cloud-icon.png" alt="rainy day" width="38px" height="auto">
+              
+              <div class="d-flex flex-column align-items-center gap-1">
+                <span><b>5°C</b></span>
+                <span><b>Rainy</b></span>
+              </div>
+   
+            </div>
+  
+        </div>
+          
+  
+        <div class="carousel-item slider-item">   
+          <div class="slider-img">
+            <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
+          </div>    
+          <div class="d-flex flex-column weatherSlider-heading gap-1 align-items-center">
+              <h2>Wednesday</h2>
+              <span>7 Jul 2023</span>
+          </div>
+  
+          <div class="d-flex flex-column align-items-center m-2">
+            <img src="Assets/Img/slider-radio.svg" alt="slider" width="203px" height="auto">
+          </div>
+  
+          <div class="d-flex flex-row weather-details gap-4 justify-content-center">
+  
+            <img src="Assets/Img/cloud-icon.png" alt="rainy day" width="38px" height="auto">
+            
+            <div class="d-flex flex-column align-items-center gap-1">
+              <span><b>5°C</b></span>
+              <span><b>Rainy</b></span>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div class="carousel-item slider-item" >      
+  
+          <div class="slider-img">
+            <img src="Assets/Img/Jerusalem Slider Img.png" alt="Jerusalem" width="86px" height="auto">
+          </div>   
+              
+          <div class="d-flex flex-column weatherSlider-heading gap-1 align-items-center">
+              <h2>Wednesday</h2>
+              <span>7 Jul 2023</span>
+          </div>
+  
+           <div class="d-flex flex-column align-items-center m-2">
+            <img src="Assets/Img/slider-radio.svg" alt="slider" width="203px" height="auto">
+          </div>
+  
+          <div class="d-flex flex-row weather-details gap-4 justify-content-center">
+  
+            <img src="Assets/Img/cloud-icon.png" alt="rainy day" width="38px" height="auto">
+            
+            <div class="d-flex flex-column align-items-center gap-1">
+              <span><b>5°C</b></span>
+              <span><b>Rainy</b></span>
+            </div>
+  
+          </div>
+  
+  
+        </div>
+  
+      </div>
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#weatherSlider2" data-bs-slide="prev">
+            
+          <img class="slider-control-prev" src="Assets/Img/slider-back-icon.svg">
+          <span class="visually-hidden">Previous</span>
+  
+      </button>
+  
+      <button class="carousel-control-next" type="button" data-bs-target="#weatherSlider2" data-bs-slide="next">
+            
+          <img class="slider-control-next" src="Assets/Img/slider-back-icon.svg">
+          <span class="visually-hidden">Next</span>
+  
+      </button>
+      
+  
+    </div>
+  
+  </section>
+
+<section id="planOverview" >
+
+<div class="btn-group d-flex flex-row align-items-center ">
+    <a class="btn plan-overview h-100 col"  href="dailyPlan.html">Plan Overview</a>
+    <a class="btn plan-details h-100 col active" href="dailyPlan Details.html" >Plan Details</a>
+</div>
+
+<div style="border-left: dashed 1px #EB62B4;">
+
+<div id="morning">
+
+  <div class="d-flex flex-row gap-2 align-items-center" style="padding:5px 20px 20px 20px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M8.00004 14.6666C4.31804 14.6666 1.33337 11.682 1.33337 7.99998C1.33337 4.31798 4.31804 1.33331 8.00004 1.33331C11.682 1.33331 14.6667 4.31798 14.6667 7.99998C14.6667 11.682 11.682 14.6666 8.00004 14.6666ZM8.66671 7.99998V4.66665H7.33337V9.33331H11.3334V7.99998H8.66671Z" fill="#1AA040"/>
+    </svg>
+    <h5 >Morning</h5>
+  </div>
+
+
+<div class="d-flex flex-column w-100 align-items-start"> 
+  
+  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-4px; margin-bottom:-25px;" width="7" height="7" viewBox="0 0 7 7" fill="none">
+    <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
+  </svg>
+
+
+  <a href="" class="d-flex flex-column justify-content-center w-auto card-details h-100 mt-3 planCard">
+
+   
+    <div id="planCardCarousel" class="carousel slide ">
+     
+      <div class="carousel-inner mb-5">
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/hotel montefiore.png">
+        </div>
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/hotel montefiore.png">
+        </div>
+
+        <div class="carousel-item active">
+          <img class="carousel-img w-100" src="Assets/Img/hotel montefiore.png">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev " type="button" data-bs-target="#planCardCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#planCardCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>   
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#planCardCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#planCardCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#planCardCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="" aria-current="true"></button>
+      </div>
+
+    </div>   
+
+    
+    <div class="d-flex flex-row align-items-center justify-content-between w-100">
+
+      <div class="d-flex flex-row align-items-center gap-3">
+
+        <img src="Assets/Img/hotel icon.svg">
+
+        <div class="d-flex flex-column align-items-start justify-content-center ">
+          <h4>Hotel Montefiore</h4>
+          <span>10.00 AM</span>
+        </div>        
+
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 17 24" fill="none">
+        <g clip-path="url(#clip0_1_469)">
+          <path d="M11.0877 0.399093C10.2773 0.145125 9.39325 0 8.49076 0C5.89379 0 3.55468 1.161 1.98914 2.9932L6.0043 6.31292L11.0877 0.399093Z" fill="#1A73E8"/>
+          <path d="M1.98917 2.99319C0.755146 4.44444 0 6.33106 0 8.36281C0 9.94104 0.313109 11.2109 0.847237 12.3537L6.00433 6.31292L1.98917 2.99319Z" fill="#EA4335"/>
+          <path d="M8.50927 5.17005C10.3143 5.17005 11.7693 6.60316 11.7693 8.38094C11.7693 9.16098 11.4746 9.88661 10.9957 10.449C10.9957 10.449 13.5559 7.43763 16.0607 4.51699C15.0293 2.55781 13.2427 1.07028 11.0878 0.399078L6.00439 6.31291C6.6122 5.62357 7.49627 5.17005 8.50927 5.17005Z" fill="#4285F4"/>
+          <path d="M8.50926 11.5737C6.70428 11.5737 5.24924 10.1406 5.24924 8.36281C5.24924 7.58277 5.52551 6.85714 6.00439 6.31293L0.84729 12.3537C1.73136 14.2766 3.20482 15.8367 4.71511 17.7778L10.9957 10.4308C10.3879 11.1383 9.50384 11.5737 8.50926 11.5737Z" fill="#FBBC04"/>
+          <path d="M10.8852 19.8095C13.7216 15.4376 17.0184 13.4603 17.0184 8.38094C17.0184 6.98412 16.6685 5.678 16.0607 4.517L4.71509 17.7778C5.19396 18.3945 5.69125 19.102 6.17013 19.8277C7.90144 22.458 7.42256 24.0181 8.52766 24.0181C9.63275 24.0181 9.15387 22.4399 10.8852 19.8095Z" fill="#34A853"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_1_469">
+            <rect width="17" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+
+    </div> 
+
+    <p class="location-in-detail">This boutique hotel in Tel Aviv offers a blend of modern comfort and timeless charm.</p>
+
+    <button class="btn mt-3 view-details">View Details</button> 
+
+   
+  </a>    
+
+  
+
+</div>
+
+<div class="d-flex flex-column w-100 align-items-start"> 
+  
+  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-4px; margin-top:30px; margin-bottom:-55px;" width="7" height="7" viewBox="0 0 7 7" fill="none">
+    <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
+  </svg>
+
+
+  <a href="" class="d-flex flex-column justify-content-center w-auto card-details h-100 mt-5 planCard">
+
+   
+    <div id="planCardCarousel2" class="carousel slide ">
+     
+      <div class="carousel-inner mb-5">
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/Shuk HaCarmel.png">
+        </div>
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/Shuk HaCarmel.png">
+        </div>
+
+        <div class="carousel-item active">
+          <img class="carousel-img w-100" src="Assets/Img/Shuk HaCarmel.png">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev " type="button" data-bs-target="#planCardCarousel2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#planCardCarousel2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>   
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#planCardCarousel2" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#planCardCarousel2" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#planCardCarousel2" data-bs-slide-to="2" aria-label="Slide 3" class="" aria-current="true"></button>
+      </div>
+
+    </div>   
+
+    
+    <div class="d-flex flex-row align-items-center justify-content-between w-100">
+
+      <div class="d-flex flex-row align-items-center gap-3">
+
+        <img src="Assets/Img/location-icon.svg">
+
+        <div class="d-flex flex-column align-items-start justify-content-center ">
+          <h4>Shuk HaCarmel</h4>
+          <span>12:00 AM</span>
+        </div>        
+
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 17 24" fill="none">
+        <g clip-path="url(#clip0_1_469)">
+          <path d="M11.0877 0.399093C10.2773 0.145125 9.39325 0 8.49076 0C5.89379 0 3.55468 1.161 1.98914 2.9932L6.0043 6.31292L11.0877 0.399093Z" fill="#1A73E8"/>
+          <path d="M1.98917 2.99319C0.755146 4.44444 0 6.33106 0 8.36281C0 9.94104 0.313109 11.2109 0.847237 12.3537L6.00433 6.31292L1.98917 2.99319Z" fill="#EA4335"/>
+          <path d="M8.50927 5.17005C10.3143 5.17005 11.7693 6.60316 11.7693 8.38094C11.7693 9.16098 11.4746 9.88661 10.9957 10.449C10.9957 10.449 13.5559 7.43763 16.0607 4.51699C15.0293 2.55781 13.2427 1.07028 11.0878 0.399078L6.00439 6.31291C6.6122 5.62357 7.49627 5.17005 8.50927 5.17005Z" fill="#4285F4"/>
+          <path d="M8.50926 11.5737C6.70428 11.5737 5.24924 10.1406 5.24924 8.36281C5.24924 7.58277 5.52551 6.85714 6.00439 6.31293L0.84729 12.3537C1.73136 14.2766 3.20482 15.8367 4.71511 17.7778L10.9957 10.4308C10.3879 11.1383 9.50384 11.5737 8.50926 11.5737Z" fill="#FBBC04"/>
+          <path d="M10.8852 19.8095C13.7216 15.4376 17.0184 13.4603 17.0184 8.38094C17.0184 6.98412 16.6685 5.678 16.0607 4.517L4.71509 17.7778C5.19396 18.3945 5.69125 19.102 6.17013 19.8277C7.90144 22.458 7.42256 24.0181 8.52766 24.0181C9.63275 24.0181 9.15387 22.4399 10.8852 19.8095Z" fill="#34A853"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_1_469">
+            <rect width="17" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+
+    </div> 
+
+    <p class="location-in-detail">Explore colorful stalls, sample delicious street food, and discover a treasure trove of fresh produce and local crafts.</p>
+
+    <button class="btn mt-3 view-details">View Details</button>    
+
+  </a>    
+
+  
+</div>
+
+</div>
+
+<div id="afternoon">
+  
+  <div class="d-flex flex-row gap-2 align-items-center" style="padding:5px 20px 20px 20px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M7.99998 14.6667C4.31798 14.6667 1.33331 11.682 1.33331 8C1.33331 4.318 4.31798 1.33333 7.99998 1.33333C11.682 1.33333 14.6666 4.318 14.6666 8C14.6666 11.682 11.682 14.6667 7.99998 14.6667ZM8.66665 8V4.66667H7.33331V9.33333H11.3333V8H8.66665Z" fill="#26399D"/>
+    </svg>
+    <h5 >Afternoon</h5>
+  </div>
+
+
+<div class="d-flex flex-column w-100 align-items-start"> 
+  
+  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-4px; margin-bottom:-25px;" width="7" height="7" viewBox="0 0 7 7" fill="none">
+    <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
+  </svg>
+
+
+  <a href="" class="d-flex flex-column justify-content-center w-auto card-details h-100 mt-3 planCard">
+
+   
+    <div id="planCardCarousel3" class="carousel slide ">
+     
+      <div class="carousel-inner mb-5">
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/meshek barzilay.png">
+        </div>
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/meshek barzilay.png">
+        </div>
+
+        <div class="carousel-item active">
+          <img class="carousel-img w-100" src="Assets/Img/meshek barzilay.png">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev " type="button" data-bs-target="#planCardCarouse3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#planCardCarouse3" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>   
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#planCardCarouse3" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#planCardCarouse3" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#planCardCarouse3" data-bs-slide-to="2" aria-label="Slide 3" class="" aria-current="true"></button>
+      </div>
+
+    </div>   
+
+    
+    <div class="d-flex flex-row align-items-center justify-content-between w-100">
+
+      <div class="d-flex flex-row align-items-center gap-3">
+
+        <img src="Assets/Img/lunch-icon.svg">
+
+        <div class="d-flex flex-column align-items-start justify-content-center">
+          <h4>Meshek Barzilay</h4>
+          <span>02.00 AM</span>
+        </div>        
+
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 17 24" fill="none">
+        <g clip-path="url(#clip0_1_469)">
+          <path d="M11.0877 0.399093C10.2773 0.145125 9.39325 0 8.49076 0C5.89379 0 3.55468 1.161 1.98914 2.9932L6.0043 6.31292L11.0877 0.399093Z" fill="#1A73E8"/>
+          <path d="M1.98917 2.99319C0.755146 4.44444 0 6.33106 0 8.36281C0 9.94104 0.313109 11.2109 0.847237 12.3537L6.00433 6.31292L1.98917 2.99319Z" fill="#EA4335"/>
+          <path d="M8.50927 5.17005C10.3143 5.17005 11.7693 6.60316 11.7693 8.38094C11.7693 9.16098 11.4746 9.88661 10.9957 10.449C10.9957 10.449 13.5559 7.43763 16.0607 4.51699C15.0293 2.55781 13.2427 1.07028 11.0878 0.399078L6.00439 6.31291C6.6122 5.62357 7.49627 5.17005 8.50927 5.17005Z" fill="#4285F4"/>
+          <path d="M8.50926 11.5737C6.70428 11.5737 5.24924 10.1406 5.24924 8.36281C5.24924 7.58277 5.52551 6.85714 6.00439 6.31293L0.84729 12.3537C1.73136 14.2766 3.20482 15.8367 4.71511 17.7778L10.9957 10.4308C10.3879 11.1383 9.50384 11.5737 8.50926 11.5737Z" fill="#FBBC04"/>
+          <path d="M10.8852 19.8095C13.7216 15.4376 17.0184 13.4603 17.0184 8.38094C17.0184 6.98412 16.6685 5.678 16.0607 4.517L4.71509 17.7778C5.19396 18.3945 5.69125 19.102 6.17013 19.8277C7.90144 22.458 7.42256 24.0181 8.52766 24.0181C9.63275 24.0181 9.15387 22.4399 10.8852 19.8095Z" fill="#34A853"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_1_469">
+            <rect width="17" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+
+    </div> 
+
+    <p class="location-in-detail">Meshek Barzilay, a nice restaurant in Tel Aviv. Enjoy organic and plant-based dishes bursting with flavors</p>
+
+    <button class="btn mt-3 view-details">View Details</button> 
+
+   
+  </a>    
+
+  
+</div>
+
+<div class="d-flex flex-column w-100 align-items-start"> 
+  
+  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-4px; margin-top:30px; margin-bottom:-55px;" width="7" height="7" viewBox="0 0 7 7" fill="none">
+    <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
+  </svg>
+
+
+  <a href="" class="d-flex flex-column justify-content-center w-auto card-details h-100 mt-5 planCard">
+
+   
+    <div id="planCardCarousel4" class="carousel slide ">
+     
+      <div class="carousel-inner mb-5">
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/shenkin street.png">
+        </div>
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/shenkin street.png">
+        </div>
+
+        <div class="carousel-item active">
+          <img class="carousel-img w-100" src="Assets/Img/shenkin street.png">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev " type="button" data-bs-target="#planCardCarousel4" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#planCardCarousel4" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>   
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#planCardCarousel4" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#planCardCarousel4" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#planCardCarousel4" data-bs-slide-to="2" aria-label="Slide 3" class="" aria-current="true"></button>
+      </div>
+
+    </div>   
+
+    
+    <div class="d-flex flex-row align-items-center justify-content-between w-100">
+
+      <div class="d-flex flex-row align-items-center gap-3">
+
+        <img src="Assets/Img/shopping-icon.svg">
+
+        <div class="d-flex flex-column align-items-start justify-content-center ">
+          <h4>Shenkin Street</h4>
+          <span>05:00 PM </span>
+        </div>        
+
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 17 24" fill="none">
+        <g clip-path="url(#clip0_1_469)">
+          <path d="M11.0877 0.399093C10.2773 0.145125 9.39325 0 8.49076 0C5.89379 0 3.55468 1.161 1.98914 2.9932L6.0043 6.31292L11.0877 0.399093Z" fill="#1A73E8"/>
+          <path d="M1.98917 2.99319C0.755146 4.44444 0 6.33106 0 8.36281C0 9.94104 0.313109 11.2109 0.847237 12.3537L6.00433 6.31292L1.98917 2.99319Z" fill="#EA4335"/>
+          <path d="M8.50927 5.17005C10.3143 5.17005 11.7693 6.60316 11.7693 8.38094C11.7693 9.16098 11.4746 9.88661 10.9957 10.449C10.9957 10.449 13.5559 7.43763 16.0607 4.51699C15.0293 2.55781 13.2427 1.07028 11.0878 0.399078L6.00439 6.31291C6.6122 5.62357 7.49627 5.17005 8.50927 5.17005Z" fill="#4285F4"/>
+          <path d="M8.50926 11.5737C6.70428 11.5737 5.24924 10.1406 5.24924 8.36281C5.24924 7.58277 5.52551 6.85714 6.00439 6.31293L0.84729 12.3537C1.73136 14.2766 3.20482 15.8367 4.71511 17.7778L10.9957 10.4308C10.3879 11.1383 9.50384 11.5737 8.50926 11.5737Z" fill="#FBBC04"/>
+          <path d="M10.8852 19.8095C13.7216 15.4376 17.0184 13.4603 17.0184 8.38094C17.0184 6.98412 16.6685 5.678 16.0607 4.517L4.71509 17.7778C5.19396 18.3945 5.69125 19.102 6.17013 19.8277C7.90144 22.458 7.42256 24.0181 8.52766 24.0181C9.63275 24.0181 9.15387 22.4399 10.8852 19.8095Z" fill="#34A853"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_1_469">
+            <rect width="17" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+
+    </div> 
+
+    <p class="location-in-detail">Visit Shenkin Street for trendy boutiques, unique fashion, and local designer stores for shopping.</p>
+
+    <button class="btn mt-3 view-details">View Details</button>    
+
+  </a>    
+
+  
+</div>
+
+</div>
+
+
+<div id="Evening">
+  
+  <div class="d-flex flex-row gap-2 align-items-center" style="padding:5px 20px 20px 20px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M7.99998 14.6666C4.31798 14.6666 1.33331 11.682 1.33331 7.99998C1.33331 4.31798 4.31798 1.33331 7.99998 1.33331C11.682 1.33331 14.6666 4.31798 14.6666 7.99998C14.6666 11.682 11.682 14.6666 7.99998 14.6666ZM8.66665 7.99998V4.66665H7.33331V9.33331H11.3333V7.99998H8.66665Z" fill="#76961D"/>
+    </svg>
+    <h5 >Evening</h5>
+  </div>
+
+
+<div class="d-flex flex-column w-100 align-items-start"> 
+  
+  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-4px; margin-bottom:-25px;" width="7" height="7" viewBox="0 0 7 7" fill="none">
+    <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
+  </svg>
+
+
+  <a href="" class="d-flex flex-column justify-content-center w-auto card-details h-100 mt-3 planCard">
+
+   
+    <div><iframe  width="100%" height="150"frameborder="0" style="border:0" class="carousel-img mb-3"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.1993771473283!2d-122.0838!3d37.3861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbee06d76806d%3A0x1545b1b1a855fead!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1611317848897!5m2!1sen!2sus">
+    </iframe>
+    </div>   
+
+    
+    <div class="d-flex flex-row align-items-center justify-content-between w-100">
+
+      <div class="d-flex flex-row align-items-center gap-3">
+
+        <img src="Assets/Img/Event-icon.svg">
+
+        <div class="d-flex flex-column align-items-start justify-content-center">
+          <h4>Tel Aviv Port</h4>
+          <span>07:30 PM </span>
+        </div>        
+
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 17 24" fill="none">
+        <g clip-path="url(#clip0_1_469)">
+          <path d="M11.0877 0.399093C10.2773 0.145125 9.39325 0 8.49076 0C5.89379 0 3.55468 1.161 1.98914 2.9932L6.0043 6.31292L11.0877 0.399093Z" fill="#1A73E8"/>
+          <path d="M1.98917 2.99319C0.755146 4.44444 0 6.33106 0 8.36281C0 9.94104 0.313109 11.2109 0.847237 12.3537L6.00433 6.31292L1.98917 2.99319Z" fill="#EA4335"/>
+          <path d="M8.50927 5.17005C10.3143 5.17005 11.7693 6.60316 11.7693 8.38094C11.7693 9.16098 11.4746 9.88661 10.9957 10.449C10.9957 10.449 13.5559 7.43763 16.0607 4.51699C15.0293 2.55781 13.2427 1.07028 11.0878 0.399078L6.00439 6.31291C6.6122 5.62357 7.49627 5.17005 8.50927 5.17005Z" fill="#4285F4"/>
+          <path d="M8.50926 11.5737C6.70428 11.5737 5.24924 10.1406 5.24924 8.36281C5.24924 7.58277 5.52551 6.85714 6.00439 6.31293L0.84729 12.3537C1.73136 14.2766 3.20482 15.8367 4.71511 17.7778L10.9957 10.4308C10.3879 11.1383 9.50384 11.5737 8.50926 11.5737Z" fill="#FBBC04"/>
+          <path d="M10.8852 19.8095C13.7216 15.4376 17.0184 13.4603 17.0184 8.38094C17.0184 6.98412 16.6685 5.678 16.0607 4.517L4.71509 17.7778C5.19396 18.3945 5.69125 19.102 6.17013 19.8277C7.90144 22.458 7.42256 24.0181 8.52766 24.0181C9.63275 24.0181 9.15387 22.4399 10.8852 19.8095Z" fill="#34A853"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_1_469">
+            <rect width="17" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+
+    </div> 
+
+    <p class="location-in-detail">Discover the promenade, lined with trendy shops and restaurants, while enjoying beautiful ocean views.</p>
+
+    <button class="btn mt-3 view-details">View Details</button> 
+
+   
+  </a>    
+
+  
+</div>
+
+<div class="d-flex flex-column w-100 align-items-start"> 
+  
+  <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:-4px; margin-top:30px; margin-bottom:-55px;" width="7" height="7" viewBox="0 0 7 7" fill="none">
+    <circle cx="3.5" cy="3.5" r="3.5" fill="#EB62B4"/>
+  </svg>
+
+
+  <a href="" class="d-flex flex-column justify-content-center w-auto card-details h-100 mt-5 planCard">
+
+   
+    <div id="planCardCarousel5" class="carousel slide ">
+     
+      <div class="carousel-inner mb-5">
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/Neve Tzedek.png">
+        </div>
+
+        <div class="carousel-item ">
+          <img class="carousel-img w-100" src="Assets/Img/Neve Tzedek.png">
+        </div>
+
+        <div class="carousel-item active">
+          <img class="carousel-img w-100" src="Assets/Img/Neve Tzedek.png">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev " type="button" data-bs-target="#planCardCarousel5" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#planCardCarousel5" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>   
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#planCardCarousel5" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#planCardCarousel5" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#planCardCarousel5" data-bs-slide-to="2" aria-label="Slide 3" class="" aria-current="true"></button>
+      </div>
+
+    </div>   
+
+    
+    <div class="d-flex flex-row align-items-center justify-content-between w-100">
+
+      <div class="d-flex flex-row align-items-center gap-3">
+
+        <img src="Assets/Img/photograpy icon.svg">
+
+        <div class="d-flex flex-column align-items-start justify-content-center ">
+          <h4>Neve Tzedek</h4>
+          <span>09:00 PM</span>
+        </div>        
+
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="24" viewBox="0 0 17 24" fill="none">
+        <g clip-path="url(#clip0_1_469)">
+          <path d="M11.0877 0.399093C10.2773 0.145125 9.39325 0 8.49076 0C5.89379 0 3.55468 1.161 1.98914 2.9932L6.0043 6.31292L11.0877 0.399093Z" fill="#1A73E8"/>
+          <path d="M1.98917 2.99319C0.755146 4.44444 0 6.33106 0 8.36281C0 9.94104 0.313109 11.2109 0.847237 12.3537L6.00433 6.31292L1.98917 2.99319Z" fill="#EA4335"/>
+          <path d="M8.50927 5.17005C10.3143 5.17005 11.7693 6.60316 11.7693 8.38094C11.7693 9.16098 11.4746 9.88661 10.9957 10.449C10.9957 10.449 13.5559 7.43763 16.0607 4.51699C15.0293 2.55781 13.2427 1.07028 11.0878 0.399078L6.00439 6.31291C6.6122 5.62357 7.49627 5.17005 8.50927 5.17005Z" fill="#4285F4"/>
+          <path d="M8.50926 11.5737C6.70428 11.5737 5.24924 10.1406 5.24924 8.36281C5.24924 7.58277 5.52551 6.85714 6.00439 6.31293L0.84729 12.3537C1.73136 14.2766 3.20482 15.8367 4.71511 17.7778L10.9957 10.4308C10.3879 11.1383 9.50384 11.5737 8.50926 11.5737Z" fill="#FBBC04"/>
+          <path d="M10.8852 19.8095C13.7216 15.4376 17.0184 13.4603 17.0184 8.38094C17.0184 6.98412 16.6685 5.678 16.0607 4.517L4.71509 17.7778C5.19396 18.3945 5.69125 19.102 6.17013 19.8277C7.90144 22.458 7.42256 24.0181 8.52766 24.0181C9.63275 24.0181 9.15387 22.4399 10.8852 19.8095Z" fill="#34A853"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_1_469">
+            <rect width="17" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+
+    </div> 
+
+    <p class="location-in-detail">Experience & capture the unique blend of historic architecture and contemporary culture in this vibrant artistic enclave.</p>
+
+    <button class="btn mt-3 view-details">View Details</button>    
+
+  </a>    
+
+  
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+</section>
+
+<!--Bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  
+
+<!-- Additional JS (optional) -->
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

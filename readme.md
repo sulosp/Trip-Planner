@@ -1,1 +1,1 @@
-https://trip-planner-mini.netlify.app/
+Trip Planner Dashboard - Mobile Version

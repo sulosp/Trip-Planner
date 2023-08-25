@@ -1,1 +1,1 @@
-Trip Planner Dashboard - Mobile Version
+Mobile Version of Trip Planner Dashboard
